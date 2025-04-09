@@ -6,4 +6,221 @@ body {
 	font-family: "Comfortaa", cursive;
 	margin: 0;
 	background-color: #F3F6FD;
+	font-weight: 400;
 }
+
+.app {
+	display: flex;
+}
+
+.logo {
+	margin-bottom: 50px;
+}
+
+.panel {
+	background: white;
+	min-height: 100vh;
+	padding: 30px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	align-items: center;
+}
+
+.menu__list {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	align-items: center;
+}
+
+.menu__item {
+	border-radius: 14px;
+	box-shadow: 0px 8px 14px 0px rgba(62, 107, 224, 0.12);
+	background: #FFFFFF;
+	border: none;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+
+.menu__item:hover {
+	background: rgb(106, 106, 251);
+}
+
+.menu__item:hover img{
+	filter: brightness(0) invert(1);
+}
+
+.menu__item_active {
+	background: rgb(80, 81, 249)
+}
+
+.menu__item_active img {
+	filter: brightness(0) invert(1);
+}
+
+.menu__add {
+	background: none;
+	border: 1px solid rgb(202, 213, 255);
+	border-radius: 14px;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+
+.menu__add:hover {
+	background: rgb(227, 228, 231);
+}
+
+.content {
+	min-width: 900px;
+	padding: 45px;
+}
+
+.progress {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	min-width: 235px;
+}
+
+.progress__text{
+	display: flex;
+	justify-content: space-between;
+}
+
+.progress__name {
+	color: rgb(35, 35, 96);
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.progress__percent {
+	color: rgb(118, 131, 150);
+	font-size: 12px;
+	line-height: 13px;
+}
+
+.progress__bar {
+	width: 100%;
+	border-radius: 4px;
+	background: rgb(230, 233, 237);
+	height: 5px;
+	position: relative;
+}
+
+.progress__cover-bar {
+	position: absolute;
+	width: 80%;
+	border-radius: 4px;
+	height: 5px;
+	background: rgb(80, 81, 249);
+}
+
+.habbit {
+	border-radius: 10px;
+	background: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.habbit__day {
+	font-size: 14px;
+	line-height: 16px;
+	border-radius: 10px 0 0 10px;
+	border-right: 1px solid #E7EBFB;
+	background: rgb(255, 255, 255);
+	padding: 20px 40px;
+	min-width: 150px;
+}
+
+.habbit__comment {
+	font-size: 16px;
+	line-height: 18px;
+	padding: 20px 25px;
+}
+
+.habbit__delete {
+	margin-left: auto;
+	margin-right: 10px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.habbit__delete:hover {
+	background: rgb(227, 228, 231);
+}
+
+.habbit__form {
+	display: flex;
+	gap: 15px;
+	width: 100%;
+	padding: 0px 10px 0 25px;
+	position: relative;
+}
+
+.input_icon {
+	padding-left: 45px;
+}
+
+.input__icon {
+	position: absolute;
+	top: 10px;
+	left: 45px;
+}
+
+.button {
+	border-radius: 9px;
+	background: rgb(237, 236, 254);
+	border: none;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 14px;
+	color: rgb(80, 81, 249);
+	padding: 14px 30px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: rgb(219, 219, 226);
+}
+
+input {
+	background: #FFFFFF;
+	border: 1px solid #E7EBFB;
+	border-radius: 9px;
+	padding: 12px  20px;
+	font-family: "Comfortaa", cursive;
+	flex: 1;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+input::placeholder {	
+	color: rgb(136, 153, 168);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+h1 {
+	color: rgb(0, 0, 0);
+	font-size: 30px;
+	line-height: 33px;
+}
+
+main {
+	margin-top: 30px;
+}
+
